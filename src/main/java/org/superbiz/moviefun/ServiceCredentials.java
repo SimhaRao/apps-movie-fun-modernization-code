@@ -33,6 +33,6 @@ public class ServiceCredentials {
             }
         }
 
-        throw new IllegalStateException("No "+ serviceName + " found in VCAP_SERVICES");
+        throw new IllegalStateException("No "+ serviceType + "." + serviceName + " found in VCAP_SERVICES");
     }
 }
